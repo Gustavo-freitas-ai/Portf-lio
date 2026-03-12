@@ -14,11 +14,11 @@ body{
 }
 
 :root{
-    --button-on-menu-size: 32px;
-    --button-on-menu-color: linear-gradient(to right, #0DAE81, #FFFFFF);;
+    --button-on-menu-size: 17px;
+    --button-on-menu-color: #F9F9F9;
 
     --h2-topic-size: 80px;
-    --h2-topic-color: ;
+    --h2-topic-color: linear-gradient(to right, #0DAE81, #FFFFFF);;
     
     --text-card-conhecimentos-size: 22px;
     --text-card-conhecimentos-color: #D6EAE4;

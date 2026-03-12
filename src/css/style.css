@@ -1,0 +1,73 @@
+header{
+    display: flex;
+    gap: 505px;
+    align-items: center;
+    padding: 30px 120px;
+    background-color: rgba(190, 188, 188, 0.055);
+    position: fixed;
+}
+
+header nav{
+    display: flex;
+    gap: 52px;
+}
+
+
+header nav a{
+    position: relative;
+    font-size: var(--button-on-menu-size);
+    color: var(--button-on-menu-color);
+    font-weight: 600;
+}
+
+header nav a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background: #0DAE81;
+    transition: width 0.3s ease;
+}
+
+header nav a:hover{
+    color: #0DAE81;
+}
+
+header nav a:hover::after{
+    width: 100%;
+}
+
+.social-midia img{
+    width: 48px;
+}
+
+.social-midia{
+    display: flex;
+    gap: 20px;
+}
+
+#img-github{
+    transition: 0.3s;
+}
+
+#img-github:hover{
+    content: url(../../assets/image/mdi_github\ \(1\).png);
+    transform: scale(1.1);
+    transform: translateY(-5px);
+}
+
+#img-linkedin{
+    transition: 0.3s;
+}
+
+#img-linkedin:hover{
+    content: url(../../assets/image/mdi_linkedin\ \(1\).png);
+    transform: scale(1.1);
+    transform: translateY(-5px);
+}
+
+.logo{
+    width: 100px;
+}
