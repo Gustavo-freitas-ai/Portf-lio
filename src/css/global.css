@@ -12,3 +12,20 @@ body{
     font-family: "Raleway", sans-serif;
     background-color: #0B1A2B;
 }
+
+:root{
+    --button-on-menu-size: 32px;
+    --button-on-menu-color: linear-gradient(to right, #0DAE81, #FFFFFF);;
+
+    --h2-topic-size: 80px;
+    --h2-topic-color: ;
+    
+    --text-card-conhecimentos-size: 22px;
+    --text-card-conhecimentos-color: #D6EAE4;
+
+    --text-card-projetos-size: 40px;
+    --text-card-projetos-color: #FFFFFF;
+
+    --text-contato-size: 28px;
+    --text-contato-color: #FFFFFF;
+}
