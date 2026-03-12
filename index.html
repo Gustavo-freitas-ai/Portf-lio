@@ -11,30 +11,38 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <script src="./src/js/script.js" defer></script>
     <title>Portfólio</title>
 </head>
 <body>
     <header>
         <img src="./assets/image/logo.png" alt="" class="logo">
         <nav>
-        <a href="">Home</a>
-        <a href="">Sobre</a>
-        <a href="">Conhecimentos</a>
-        <a href="">Contato</a>
+        <a href="#Home">Home</a>
+        <a href="#Sobre">Sobre</a>
+        <a href="#Conhecimentos">Conhecimentos</a>
+        <a href="#Projetos">Projetos</a>
+        <a href="#Contato">Contato</a>
         </nav>
         <div class="social-midia">
             <a href="https://github.com/Gustavo-freitas-ai" target="_blank"><img src="./assets/image/mdi_github.png" alt="" id="img-github"></a>
             <a href="https://www.linkedin.com/in/gustavo-freitas-83a3a5366/" target="_blank"><img src="./assets/image/mdi_linkedin.png" alt="" id="img-linkedin"></a>
         </div>
     </header>
-    <main>
+    <main id="Home">
         <img src="./assets/image/foto_gustavo.jpg 1.png" alt="">
         <div class="text-hero">
-            <h1>Gustavo Developer</h1>
-            <h2>Desenvolvedor <br> <span>Front -End & <br> Backend</span></h2>
+            <h1 id="digitando"></h1>
+            <h2>
+            Desenvolvedor <br>
+            <span class="front">Front -</span> <br>
+            <span class="end">End &</span> <br>
+            <span class="back">Backend</span>
+            </h2>
         </div>
     </main>
-    <section class="about-me">
+    <div class="linha"></div>
+    <section class="about-me" id="Sobre">
         <div class="h2-about-me">
             <h2>Sobre mim</h2>
         </div>
@@ -50,7 +58,7 @@
                      e estou cursando Análise e Desenvolvimento de Sistemas.</p>
         </div>
     </section>
-    <section class="knowledge">
+    <section class="knowledge" id="Conhecimentos">
         <div class="h2-knowledge">
             <h2>Conhecimentos</h2>
         </div>
@@ -94,7 +102,7 @@
             </div>
         </div>
     </section>
-    <section class="projects">
+    <section class="projects" id="Projetos">
         <div class="h2-projects">
             <h2>Projetos</h2>
         </div>
@@ -113,7 +121,7 @@
             </div>
         </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="Contato">
         <div class="h2-contact">
             <h2>Contato</h2>
         </div>
