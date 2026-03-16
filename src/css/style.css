@@ -74,7 +74,7 @@ header nav a:hover::after {
 main {
     display: flex;
     padding-top: 200px;
-    padding-bottom: 125px;
+    padding-bottom: 100px;
     justify-content: center;
     gap: 90px;
 }
@@ -122,19 +122,6 @@ main img {
     background: linear-gradient(180deg, #00ffa6, #00c3ff);
 }
 
-const texto = "Gustavo Developer";
-const elemento = document.getElementById("digitando");
-
-let i = 0;
-
-function digitar(){
-    if(i < texto.length){
-        elemento.innerHTML += texto.charAt(i);
-        i++;
-        setTimeout(digitar, 80);
-    }
-}
-
 #digitando::after{
     content: "|";
     margin-left: 5px;
@@ -146,4 +133,70 @@ function digitar(){
     0%{opacity:1;}
     50%{opacity:0;}
     100%{opacity:1;}
+}
+
+.about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.h2-about-me h2{
+    font-size: var(--h2-topic-size);
+    background: var(--h2-topic-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-me-hero{
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    width: 1500px;
+    gap: 80px;
+}
+
+.img-about-me img{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+
+.img-about-me img.aparecer{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about-me-hero p{
+    text-align: center;
+    font-size: 28px;
+    color: #E4FFF0;
+}
+
+.text{
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 1s ease;
+}
+
+.text.aparecer{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.h2-about-me{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.aparecer {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#gustavo{
+    color: #0DAE81;
 }

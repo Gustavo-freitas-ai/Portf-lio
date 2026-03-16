@@ -21,8 +21,8 @@ body{
     --button-on-menu-size: 17px;
     --button-on-menu-color: #F9F9F9;
 
-    --h2-topic-size: 80px;
-    --h2-topic-color: linear-gradient(to right, #0DAE81, #FFFFFF);
+    --h2-topic-size: 50px;
+    --h2-topic-color: linear-gradient(to bottom, #0DAE81, #FFFFFF);
     
     --text-card-conhecimentos-size: 22px;
     --text-card-conhecimentos-color: #D6EAE4;
