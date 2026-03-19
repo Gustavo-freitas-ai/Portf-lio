@@ -5,6 +5,10 @@ header {
     padding: 30px 120px;
     background-color: rgba(190, 188, 188, 0.055);
     position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 header nav {
@@ -24,6 +28,7 @@ header nav a {
 }
 
 header nav a::after {
+    transition: 0.2s;
     content: "";
     position: absolute;
     left: 0;
@@ -141,6 +146,7 @@ main img {
     justify-content: center;
     align-items: center;
     padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .h2-about-me h2{
@@ -199,4 +205,92 @@ main img {
 
 #gustavo{
     color: #0DAE81;
+}
+
+.linha2 {
+    width: 90%;
+    height: 3px;
+    margin: auto;
+    background: #E4FFF0;
+}
+
+.knowledge{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 80px;
+}
+
+.h2-knowledge h2{
+    font-size: var(--h2-topic-size);
+    background: var(--h2-topic-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.h2-knowledge{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.h2-knowledge.aparecer {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.container-knowledge{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 100px;
+    padding-top: 80px;
+}
+
+.card-knowledge{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    border-radius: 20px;
+    background-color: #010D1B;
+    box-shadow: rgba(0, 0, 0, 0.25) -20px 16px 10px;
+    width: 300px;
+    height: 400px;
+}
+
+.card-knowledge {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+
+.card-knowledge img{
+    transition: 0.3s;
+}
+
+.card-knowledge img:hover {
+    transform: scale(1.2);
+}
+
+.card-knowledge p{
+    transition: 0.3s;
+}
+
+.card-knowledge p:hover{
+    transform: scale(1.2);
+}
+
+.card-knowledge.aparecer {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.card-knowledge p{
+    color: var(--text-card-conhecimentos-color);
+    font-size: var(--text-card-conhecimentos-size);
+    text-align: center;
+    width: 240px;
 }
